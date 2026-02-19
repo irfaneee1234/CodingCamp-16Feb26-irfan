@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List - Irfan</title>
+
+    <!-- css external -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body>
+    <!-- header konten -->
+    <Header>
+        <h1 class="text-3xl font-bold text-center">Todo List</h1>
+    </Header>
+
+    <!-- main konten -->
+    <main>
+        <!-- Form Section -->
+        <section>
+            <form>
+                <input class="border p-2 rounded" type="text" id="todo-input" placeholder="Enter a new todo item">
+                <input class="border p-2 rounded" type="date" id="todo-date" placeholder="Enter out date">
+            
+            </form>
+                <button class="border p-2 rounded bg-blue-500 text-white hover:bg-blue-700" type="button">Add Todo</button>
+            
+        </section>
+
+        <section class="flex flex-col pt-2 justify-between">  
+
+            <button class="border p-2 rounded bg-red-500 text-white hover:bg-red-700" type="button">Clear All</button>
+
+            <button class="border p-2 rounded bg-gray-500 text-white hover:bg-gray-700" type="button">Filter Todo</button>
+        </section>
+        
+        <section class="pt-2">
+            <header>
+                <h1 class="text-2xl font-bold">My Todo List</h1>
+            </header>
+        </section>
+
+        <ul class="pt-2" id="todo-list">
+            <li>No todos Available</li>
+        </ul>
+    </main>
+
+    <!-- footer konten -->
+    <footer>
+        <p>&copy; 2026 My Todo List App</p>
+    </footer>
+
+    <!-- Japvascript external -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
